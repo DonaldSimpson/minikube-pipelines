@@ -8,7 +8,7 @@ podTemplate(label: 'mypod', containers: [
     // automatically label the pod - see https://plugins.jenkins.io/kubernetes/ for more info
     node(POD_LABEL) {
 
-        // cloen a git repo that contains a gradle project
+        // clone a git repo that contains a gradle project
         stage('Clone git repository') {
             // run the following commands in the git container
             container('git') {
